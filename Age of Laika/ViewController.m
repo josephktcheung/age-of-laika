@@ -28,6 +28,20 @@
 {
     int age = [self.textField.text integerValue];
     int dogYear = age * 7;
+
     self.dogYearLabel.text = [NSString stringWithFormat:@"%i", dogYear];
+}
+
+- (IBAction)realDogYearButtonPressed:(UIButton *)sender
+{
+    int age = [self.textField.text integerValue];
+    float dogYear;
+    if (age <= 2) {
+        dogYear = age * 10.5;
+    }
+    else {
+        dogYear = (age - 2) * 4 + 2 * 10.5;
+    }
+    self.realDogYearLabel.text = [NSString stringWithFormat:@"%.1f", dogYear];
 }
 @end

@@ -26,23 +26,33 @@
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Roa-wQ-Jjb">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Convert">
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Convert to dog years">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="128" y="179" width="55" height="30"/>
+                                    <rect key="frame" x="6" y="169" width="114" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="convertButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ftg-wP-VXM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2x-Q6-CHE">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2x-Q6-CHE">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="125" y="49" width="175" height="21"/>
+                                    <rect key="frame" x="177" y="49" width="123" height="21"/>
+                                </variation>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dsY-jv-43F">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="177" y="83" width="123" height="21"/>
                                 </variation>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dog Year:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K28-1O-ecK">
@@ -54,12 +64,35 @@
                                     <rect key="frame" x="20" y="49" width="77" height="21"/>
                                 </variation>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Real Converter:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="og8-Ga-ZyI">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="20" y="83" width="120" height="21"/>
+                                </variation>
+                            </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="laika.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="RdJ-ha-fzS">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="223" width="320" height="257"/>
                                 </variation>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvv-pr-xMm">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Real Dog Year Converter">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="158" y="169" width="142" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="convertButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="fuF-Eu-uPF"/>
+                                    <action selector="realDogYearButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mCh-eQ-fLs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -67,8 +100,11 @@
                                 <exclude reference="Dq4-1S-qU1"/>
                                 <exclude reference="Roa-wQ-Jjb"/>
                                 <exclude reference="r2x-Q6-CHE"/>
+                                <exclude reference="dsY-jv-43F"/>
                                 <exclude reference="K28-1O-ecK"/>
+                                <exclude reference="og8-Ga-ZyI"/>
                                 <exclude reference="RdJ-ha-fzS"/>
+                                <exclude reference="cvv-pr-xMm"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -76,13 +112,17 @@
                                 <include reference="Dq4-1S-qU1"/>
                                 <include reference="Roa-wQ-Jjb"/>
                                 <include reference="r2x-Q6-CHE"/>
+                                <include reference="dsY-jv-43F"/>
                                 <include reference="K28-1O-ecK"/>
+                                <include reference="og8-Ga-ZyI"/>
                                 <include reference="RdJ-ha-fzS"/>
+                                <include reference="cvv-pr-xMm"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="dogYearLabel" destination="r2x-Q6-CHE" id="UaI-qN-MC2"/>
+                        <outlet property="realDogYearLabel" destination="dsY-jv-43F" id="b4R-a6-hoT"/>
                         <outlet property="textField" destination="Dq4-1S-qU1" id="hqJ-Ys-nzi"/>
                     </connections>
                 </viewController>
