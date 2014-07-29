@@ -24,4 +24,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)convertButtonPressed:(UIButton *)sender
+{
+    int age = [self.textField.text integerValue];
+    int dogYear = age * 7;
+    self.dogYearLabel.text = [NSString stringWithFormat:@"%i", dogYear];
+}
 @end
